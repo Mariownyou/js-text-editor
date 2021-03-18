@@ -1,0 +1,197 @@
+/* Set a background image by replacing the URL below */
+body {
+  background: url("https://source.unsplash.com/KZNTEn2r6tw/1920x1080") no-repeat center center fixed;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.danger {
+  color: white;
+  background: red;
+  border: solid 1px black;
+}
+
+.danger:active {
+  color: black;
+  background: white;
+  border: solid 1px black;
+}
+
+h1, h2, h3, h4 {
+  padding: 0.25em 0.5em;
+  margin: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  padding: 0.25em 0.5em;
+  margin: 5px;
+  -webkit-box-shadow: 4px 4px 0px #000;
+          box-shadow: 4px 4px 0px #000;
+  border: solid 1px;
+  border-radius: 0;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  margin: 5px;
+  -webkit-box-shadow: 4px 4px 0px #000;
+          box-shadow: 4px 4px 0px #000;
+  border: solid 1px;
+  min-width: 1em;
+  font: inherit;
+  resize: none;
+  background: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+button:active {
+  border: solid 1px blue;
+  color: whitesmoke;
+  background: blue;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(4px) translateX(4px);
+          transform: translateY(4px) translateX(4px);
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.input-sizer {
+  width: 100%;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  vertical-align: top;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border: solid 1px;
+  padding: 0.25em 0.5em;
+  margin: 5px;
+  background: white;
+}
+
+.input-sizer.stacked {
+  padding: 0.5em;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.input-sizer.stacked::after,
+.input-sizer.stacked input,
+.input-sizer.stacked textarea {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: 2/1;
+}
+
+.input-sizer::after,
+.input-sizer input,
+.input-sizer textarea {
+  width: 100%;
+  min-width: 1em;
+  font: inherit;
+  padding: 0.25em;
+  margin: 0;
+  resize: none;
+  background: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+}
+
+.input-sizer::after,
+.input-sizer textarea {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2;
+}
+
+.input-sizer span {
+  padding: 0.25em;
+}
+
+.input-sizer::after {
+  content: attr(data-value) " ";
+  visibility: hidden;
+  white-space: pre-wrap;
+}
+
+.input-sizer:focus-within {
+  outline: solid 1px blue;
+  -webkit-box-shadow: 4px 4px 0px blue;
+          box-shadow: 4px 4px 0px blue;
+}
+
+.input-sizer:focus-within > span {
+  color: blue;
+}
+
+.input-sizer:focus-within textarea:focus,
+.input-sizer:focus-within input:focus {
+  outline: none;
+}
+
+.input-sizer {
+  -webkit-box-shadow: 4px 4px 0px #000;
+          box-shadow: 4px 4px 0px #000;
+}
+
+.input-sizer > span {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.tool-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+.tool--btn {
+  display: block;
+  padding: .5rem;
+  font-size: 20px;
+}
+
+#output {
+  min-height: 400px;
+  display: block;
+  vertical-align: top;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  position: relative;
+}
+/*# sourceMappingURL=main.css.map */

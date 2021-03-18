@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/index.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3bc9bfa778.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Text Editor</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="card-title">
+                <h1>Form</h1>
+            </div>
+            <form>
+                <label class="input-sizer mb-3">
+                    <span>Title: </span>
+                    <input type="text" name="title" onInput="this.parentNode.dataset.value = this.value" size="4" placeholder="Very Cool Article">
+                </label>
+                <div class="toolbar">
+                    <ul class="tool-list">
+                        <li class="tool">
+                            <button 
+                                type="button" 
+                                data-command='justifyLeft'
+                                class="tool--btn">
+                                <i class=' fas fa-align-left'></i>
+                            </button>
+                        </li>
+                        <li class="tool">
+                            <button 
+                                type="button" 
+                                data-command='justifyCenter' 
+                                class="tool--btn">
+                                <i class=' fas fa-align-center'></i>
+                            </button>
+                        </li>
+                        <li class="tool">
+                            <button 
+                                type="button" 
+                                data-command="bold" 
+                                class="tool--btn">
+                                <i class=' fas fa-bold'></i>
+                            </button>
+                        </li>
+                        <li class="tool">
+                            <button 
+                                type="button" 
+                                data-command="italic"
+                                class="tool--btn">
+                                <i class=' fas fa-italic'></i>
+                            </button>
+                        </li>
+                        <li class="tool">
+                            <button 
+                                type="button" 
+                                data-command="underline"
+                                class="tool--btn">
+                                <i class=' fas fa-underline'></i>
+                            </button>
+                        </li>
+                        <li class="tool">
+                            <button 
+                                type="button" 
+                                data-command="insertOrderedList"
+                                class="tool--btn">
+                                <i class=' fas fa-list-ol'></i>
+                            </button>
+                        </li>
+                        <li class="tool">
+                            <button 
+                                type="button" 
+                                data-command="insertUnorderedList"
+                                class="tool--btn">
+                                <i class=' fas fa-list-ul'></i>
+                            </button>
+                        </li>
+                        <li class="tool">
+                            <button 
+                                type="button" 
+                                data-command="createlink" 
+                                class="tool--btn">
+                                <i class=' fas fa-link'></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="input-sizer" id="output" contenteditable="true"></div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+   
+</body>
+</html>
